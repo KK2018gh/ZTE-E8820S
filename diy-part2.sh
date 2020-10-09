@@ -14,7 +14,7 @@ sed -i 's/OpenWrt/E8820S/g' ./package/base-files/files/bin/config_generate
 
 
 # 修改wifi名称
-sed -i 's/ZTE-E8820S-%s/$wifi_name/g' ./package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/OpenWrt/ZTE-E8820S-%s/g' ./package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
