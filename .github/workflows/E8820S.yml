@@ -59,7 +59,7 @@ jobs:
 
     steps:
     - name: 准备结束
-      uses: actions/checkout@main
+      uses: actions/checkout@master
 
     - name: 开始安装编译所需系统
       env:
