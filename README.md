@@ -2,10 +2,12 @@
 
 新增了E8820S的配置文件，此脚本自动编译我修改Lede源码的E8820S固件。
 采用B70的内存分区参数，所以用B70的breed直接刷入factory.bin固件就行。
+可以使用我适配的文件和此修改脚本，但是必须注明出处与署名。
+
+感谢@fndsz
 
 以下弃用：
 # HC5962
-
 #自动编译openwrt的hc5962 B70 固件的项目。
 #使用的源码有
 #https://github.com/coolsnowwolf/lede
