@@ -21,6 +21,18 @@ sed -i 's/OpenWrt/ZTE-E8820S-%s/g' ./package/kernel/mac80211/files/lib/wifi/mac8
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/zzz-default-settings
 
 
+echo '下载ServerChan'
+git clone https://github.com/tty228/luci-app-serverchan ../diy/luci-app-serverchan
+
+
+echo '下载AdGuard Home'
+git clone https://github.com/rufengsuixing/luci-app-adguardhome ../diy/luci-app-adguardhome
+
+
+echo '下载AdGuard Home'
+git clone https://github.com/rufengsuixing/luci-app-adguardhome ../diy/luci-app-adguardhome
+
+
 # 使用源码自带ShadowSocksR Plus+出国软件
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
