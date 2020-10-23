@@ -9,7 +9,7 @@
 #代码里有 name: 后面的内容随便改,冒号后面是有个空格的,如果修改固件名字就要考虑能不能显示出你想要的
 
 
-name: OpenWrt-E8820S-b70.config 固件
+name: OpenWrt-E8820S-b70.config 闭源固件
 
 on: 
   release:
@@ -56,7 +56,8 @@ jobs:
   build:
     name: 编译OpenWrt-lede固件
     runs-on: ubuntu-latest
-
+    if: github.event.repository.owner.id == github.event.sender.id
+    
     steps:
     - name: 准备结束
       uses: actions/checkout@main
