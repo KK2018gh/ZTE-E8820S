@@ -9,7 +9,7 @@
 #代码里有 name: 后面的内容随便改,冒号后面是有个空格的,如果修改固件名字就要考虑能不能显示出你想要的
 
 
-name: OpenWrt-bell 开源固件
+name: OpenWrt-BELL 开源固件
 
 on: 
   release:
@@ -42,7 +42,7 @@ env:
   REPO_URL: https://github.com/nanchuci/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: BELL-A-040W-Q.config
+  CONFIG_FILE: BELL-A-040W-Q-kaiyuan.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
